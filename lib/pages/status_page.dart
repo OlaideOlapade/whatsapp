@@ -12,53 +12,49 @@ class _StatusPageState extends State<StatusPage> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: Container(
-        height: 500.0,
-        child: ListView(
-          children: [
-            ListTile(
-              leading: const CircleAvatar(
-               // backgroundImage: NetworkImage('https://bit.ly/3qpaITI'),
-              ),
-              title: const Text('My status', style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.black
-              ),),
-              subtitle: const Text('30 minutes ago'),
-              trailing: const Text('...', style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold),),
-              onTap: (){},
+      body: ListView(
+        children: [
+          ListTile(
+            leading: const CircleAvatar(
+             // backgroundImage: NetworkImage('https://bit.ly/3qpaITI'),
             ),
+            title: const Text('My status', style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.black
+            ),),
+            subtitle: const Text('30 minutes ago'),
+            trailing: const Text('...', style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold),),
+            onTap: (){},
+          ),
 
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 17, vertical: 0),
-              child: const Text('Recent updates', 
-              style: TextStyle(
-                fontWeight: FontWeight.bold
-              ),
-              ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 17, vertical: 0),
+            child: const Text('Recent updates', 
+            style: TextStyle(
+              fontWeight: FontWeight.bold
             ),
+            ),
+          ),
 
-            ListTile(
-              leading: const CircleAvatar(
-               // backgroundImage: NetworkImage('https://bit.ly/3qpaITI'),
-                backgroundColor: Colors.grey,
-              ),
-              title: const Text('My status', style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.black
-              ),),
-              subtitle: const Text('50 minutes ago'),
-              // trailing: const CircleAvatar(
-              //   child: Text('...', style: TextStyle(
-              //     color: Colors.green
-              //   ),),
-              // ),
-              onTap: (){},
+          ListTile(
+            leading: const CircleAvatar(
+             // backgroundImage: NetworkImage('https://bit.ly/3qpaITI'),
+              backgroundColor: Colors.grey,
+            ),
+            title: const Text('My status', style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.black
+            ),),
+            subtitle: const Text('50 minutes ago'),
+            // trailing: const CircleAvatar(
+            //   child: Text('...', style: TextStyle(
+            //     color: Colors.green
+            //   ),),
+            // ),
+            onTap: (){},
 
-            )
-          ],
-        ),
-
+          )
+        ],
       ),
 
        floatingActionButton: Column(
